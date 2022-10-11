@@ -1,0 +1,78 @@
+.form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 100px auto;
+}
+
+.input-label {
+    border: 2px solid black;
+    padding: 30px 10px 15px 10px;
+}
+
+#email, #password {
+    width: 250px;
+    margin: 5px 0 5px 0;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: 600;
+}
+
+#email {
+    margin-bottom: 20px;
+}
+
+.button-form {
+    margin: 50px auto;
+}
+
+
+.modul {
+    width: 350px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    z-index: 20;
+    position: absolute;
+    left: 450px;
+    bottom: 350px;
+    background: white;
+}
+
+.modul-text {
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.modul-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modul-button input {
+    margin-left: 15px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.modul-button input:active {
+    background: black;
+    color: white;
+}
+.modal-content{
+    padding: 5px;
+}
+.modal-foot{
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-foot button {
+    margin-left: 20px;
+}
