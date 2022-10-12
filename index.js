@@ -32,8 +32,25 @@ input.forEach((ele) => {
     })
 })
 
-
 btn.addEventListener("click", (e) => {
     email.innerText = input[0].value;
+})
+
+let divForm = document.querySelector('.form');
+let parentDiv = divForm.parentNode;
+let confirm = document.querySelector('.modal-foot #create');
+let div = document.createElement('div');
+let divImg = document.createElement('div');
+divImg.setAttribute('class','img-user');
+let img = document.createElement('img');
+img.setAttribute('src','./img/user.jpg')
+div.setAttribute('class', 'div-hello');
+divImg.appendChild(img);
+
+confirm.addEventListener('click', (e) => {
+    let divContent = document.createTextNode(`Hello, user with email ${email.innerText}`)
+    div.appendChild(divContent);
+    div.appendChild(divImg)
+    parentDiv.replaceChild(div, divForm);
 
 })
